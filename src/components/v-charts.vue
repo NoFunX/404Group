@@ -86,7 +86,7 @@ export default {
                     this.chartOptions.series[3].data = Object.values(this.request_data[3])[1].map(e=>e.value)
                     this.chartOptions.xAxis.categories = Object.values(this.request_data[0])[1].map(e=>new Date(e.date).getFullYear())
                }
-            }, 500)
+            }, 1000)
         },
  
   },
