@@ -1,4 +1,4 @@
-# guitar-shop
+
 
 ## Project setup
 ```
