@@ -1,6 +1,6 @@
 <template>
     <div>
-    <highcharts  :options="chartOptions" ref="chart"></highcharts>
+    <highcharts  :options="chartOptions" ref="chart" v-if="request_data.length" :key="request_data.length"></highcharts>
   </div>
 </template>
 
