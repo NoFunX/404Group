@@ -16,8 +16,8 @@ export default new Vuex.Store({
 
     },
     actions: {
-       async GET_DATA({commit}) {
-            return await axios.get('https://test-task-for-frontend.herokuapp.com/data')
+       GET_DATA({commit}) {
+            return axios.get('https://test-task-for-frontend.herokuapp.com/data')
         .then(response=>{
             commit('SET_DATA', response.data.items)
             return response.data.items
